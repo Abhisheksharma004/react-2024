@@ -39,9 +39,17 @@ export default function Navbar(props) {
   )
 }
 Navbar.propTypes = {
-    title: PropTypes.string,
-    home: PropTypes.string,
-    about: PropTypes.string,
-    gallery: PropTypes.string,
-    contact: PropTypes.number
+    title: PropTypes.string.isRequired,
+    home: PropTypes.string.isRequired,
+    about: PropTypes.string.isRequired,
+    gallery: PropTypes.string.isRequired,
+    contact: PropTypes.number.isRequired
 }
+
+// Navbar.defaultProps = {
+//     title: 'Set Title',
+//     home: 'Set',
+//     about: 'Set',
+//     gallery: 'Set',
+//     contact: 0
+// }

@@ -1,11 +1,13 @@
 import './App.css';
+import Form from './components/Form';
 import Navbar from './components/Navbar';
 
 function App() {
   return (
     <>
       <Navbar title="Text Foemater" home="Home" about="About" gallery="Gallery" contact={123}/>
-      <Navbar title="Utilizing Text" home="Hello" about="Abhi" gallery="As" contact={123}/>
+      {/* <Navbar/> */}
+      <Form th="Formate Your Text"/>
     </>
   );
 }
