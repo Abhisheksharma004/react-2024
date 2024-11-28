@@ -8,7 +8,7 @@ export default function Form(props) {
                 
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
             </div>
-            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-success">Add</button>
         </div>
     )
 }
