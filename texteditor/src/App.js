@@ -7,7 +7,7 @@ function App() {
     <>
       <Navbar title="Text Foemater" home="Home" about="About" gallery="Gallery" contact={123}/>
       {/* <Navbar/> */}
-      <Form th="Formate Your Text"/>
+      <Form th="Enter Your Text"/>
     </>
   );
 }
