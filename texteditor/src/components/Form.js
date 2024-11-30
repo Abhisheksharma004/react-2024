@@ -20,6 +20,11 @@ export default function Form(props) {
         let newtext = text.toLowerCase();
         setText(newtext);
     }
+    const handleClear =() => {
+        // console.log("Lower");
+        let newtext = "";
+        setText(newtext);
+    }
 
     return (
         <>
@@ -29,7 +34,8 @@ export default function Form(props) {
                     <textarea className="form-control" value={text} onChange={handleOnchange}  id="myBox" rows="10" ></textarea>
                 </div>
                 <button type="button" className="btn btn-success mx-2" onClick={handleUp}>Upper Case</button>
-                <button type="button" className="btn btn-success" onClick={handleLower}>Lower Case</button>
+                <button type="button" className="btn btn-success mx-2" onClick={handleLower}>Lower Case</button>
+                <button type="button" className="btn btn-success mx-2" onClick={handleClear}>Clear</button>
             </div>
             <div className='container my-3'>
                 <h1>Text Summary</h1>
