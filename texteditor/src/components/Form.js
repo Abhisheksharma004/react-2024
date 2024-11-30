@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 export default function Form(props) {
 
-    const [text, setText] = useState('Enter Text Here');
+    const [text, setText] = useState('');
     // setText("New Text");
     const handleOnchange =(event) => {
         // console.log("On Change");
