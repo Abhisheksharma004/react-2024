@@ -3,6 +3,8 @@ import React, {useState} from 'react';
 export default function Form(props) {
 
     const [text, setText] = useState('');
+
+
     // setText("New Text");
     const handleOnchange =(event) => {
         // console.log("On Change");
@@ -26,6 +28,7 @@ export default function Form(props) {
         setText(newtext);
     }
 
+
     return (
         <>
             <div className='container'>
@@ -36,6 +39,7 @@ export default function Form(props) {
                 <button type="button" className="btn btn-success mx-2" onClick={handleUp}>Upper Case</button>
                 <button type="button" className="btn btn-success mx-2" onClick={handleLower}>Lower Case</button>
                 <button type="button" className="btn btn-success mx-2" onClick={handleClear}>Clear</button>
+                {/* <button type="button" className="btn btn-success mx-2" onClick={handleCopy}>Copy</button> */}
             </div>
             <div className='container my-3'>
                 <h1>Text Summary</h1>
